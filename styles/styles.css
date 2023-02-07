@@ -23,6 +23,19 @@ body {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .navigation-link {
     color: #000000;
     font-size: 20px;
@@ -30,6 +43,11 @@ body {
     line-height: 24px;
     text-decoration: none;
 }
+
+.navigation-list, .advantages-list, .offering-list {
+  list-style: none;
+}
+
 .choosen-number {
     font-size: 10px;
     line-height: 10px;
@@ -52,6 +70,7 @@ body {
     background-image: url(../images/welcome-background.jpg);
     background-repeat: no-repeat;
 }
+
 .important-text {
     font-size: 30px;
     font-weight: 700;
@@ -70,6 +89,7 @@ body {
     line-height: 28px;
     text-transform: uppercase;
 }
+
 .advantages-item {
     color: #FFFFFF;
     background-color: #82B3D3;
@@ -104,12 +124,17 @@ body {
     font-family: inherit;
 }
 
+.footer-social-list {
+  list-style: none;
+}
+
 .footer-contacts-phone {
     font-size: 40px;
     line-height: 40px;
     text-decoration: none;
     color: #000000;
 }
+
 .main-inner-header {
     color: #FFFFFF;
     background-image: url(../images/filter-background.jpg);
@@ -119,6 +144,10 @@ body {
     font-size: 60px;
     font-weight: 700;
     text-align: 78px;
+}
+
+.breadcrumbs, .catalog-filter-list, .hotels-list {
+  list-style: none;
 }
 
 .breadcrumbs-item {
@@ -136,14 +165,10 @@ line-height: 21px;
     line-height: 23px;
 }
 .reset-button {
-  color: #FFFFFF;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
   font-family: inherit;
-  border: 0;
+  background-color: transparent;
 }
+
 .catalog-filter-result {
     font-weight: 700;
 font-size: 30px;
@@ -151,8 +176,9 @@ line-height: 36px;
 }
 
 .select-control {
-  font-size: 18px
-  line-height: 21px
+  font-size: 18px;
+  line-height: 24px;
+  font-family: inherit;
 }
 
 .hotel-card-title {
@@ -161,6 +187,7 @@ line-height: 36px;
   font-weight: 700;
   color: #000000;
 }
+
 .hotel-card-link {
   text-decoration: none;
 }
@@ -175,6 +202,10 @@ background-color: #F2F2F2;
 .selected-button {
   background-color: #7DB54F;
   font-family: inherit;
+}
+
+.pagination {
+  list-style: none;
 }
 
 .pagination-link {
