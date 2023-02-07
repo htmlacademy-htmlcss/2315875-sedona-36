@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+
+.navigation-link {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+}
+.choosen-number {
+    font-size: 10px;
+    line-height: 10px;
+    color: #FFFFFF;
+    background-color: #7DB54F;
+}
+
+.button {
+    background-color: #756157;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero {
+    background-image: url(../images/welcome-background.jpg);
+}
+.important-text {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.advantages-text, .offering-text, .search-text, .subscribe-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.advantages-title, .offering-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.advantages-item:first-child, .advantages-item:last-child {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.advantages-item:nth-child(2), .advantages-item:nth-child(4) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.offering-item {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.offering-item:first-child, .offering-item:last-child {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.subscribe {
+    color: #FFFFFF;
+    background-image: url(../images/subscribe-background.jpg);
+}
+.subscribe-button {
+    background-color: #82B3D3;
+}
+
+.footer-contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+}
