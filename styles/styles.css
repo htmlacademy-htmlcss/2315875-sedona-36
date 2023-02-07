@@ -92,7 +92,7 @@ body {
     color: #FFFFFF;
     background-image: url(../images/subscribe-background.jpg);
 }
-.subscribe-button {
+.subscribe-button, .show-button, .select-button {
     background-color: #82B3D3;
 }
 
@@ -101,3 +101,36 @@ body {
     line-height: 40px;
     text-decoration: none;
 }
+.main-inner-header {
+    color: #FFFFFF;
+    background-image: url(../images/filter-background.jpg);
+}
+.inner-header-title {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: 78px;
+}
+
+.breadcrumbs-item {
+font-size: 16px;
+line-height: 21px;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px; 
+}
+
+.catalog-filter-item {
+    line-height: 23px;
+}
+.reset-button {
+    background-color: none;
+}
+.catalog-filter-result {
+    font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+}
+
