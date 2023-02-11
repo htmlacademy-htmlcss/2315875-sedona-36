@@ -35,7 +35,7 @@ body {
   margin: 0 auto;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -46,7 +46,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}*/
+}
 
 .navigation {
   display: flex;
@@ -76,9 +76,10 @@ body {
 .navigation-user-container {
   max-width: 300px;
   margin-left: auto;
+  text-align: right;
 }
 
-..navigation-user {
+.navigation-user {
   max-width: 130px;
   margin: 0;
   padding: 0;
@@ -244,10 +245,17 @@ body {
   margin: 0 auto;
 }
 
+.catalog-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main-inner-header {
   color: #FFFFFF;
   background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 70px;
 }
 .inner-header-title {
   font-size: 60px;
@@ -264,6 +272,7 @@ body {
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
+  display: inline;
 }
 
 .catalog-filter-title {
@@ -271,6 +280,31 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+}
+
+
+.catalog-filter-group {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-buttons {
+  display: inline;
+  width: 191px;
+}
+
+.catalog-filter-list{
+  margin: 0;
+  padding: 0;
+}
+
 
 .catalog-filter-item {
   line-height: 23px;
@@ -281,16 +315,51 @@ body {
   background-color: transparent;
 }
 
+.sorting-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.display-type-list {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  list-style: none;
+}
+
 .catalog-filter-result {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  margin:0;
+  margin-right: 200px;
+  width: 340px;
 }
 
-.select-control {
+.sorting {
+  width: 292px;
+  display: flex;
+  width: 522px;
+}
+
+.sorting-select {
   font-size: 18px;
   line-height: 24px;
   font-family: inherit;
+  width: 292px;
+}
+
+.hotels-list {
+  width: 1060px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.pagination {
+  width: 1060px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .hotel-card-title {
@@ -339,4 +408,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-decoration: none;
+}
+
+.subscribe-catalog {
+  text-align: center;
 }
