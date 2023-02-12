@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo">
-          <img src="images/header/sedona-logo.svg" class="page-header-logo" width="140" height="70"
-            alt="Логотип городка Седона.">
+        <a href="index.html" class="navigation-logo">
+          <img src="images/header/sedona-logo.svg" class="page-header-logo" width="140" height="70" alt="Логотип городка Седона.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Главная</a>
+            <a href="index.html" class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">О Седоне</a>
+            <a href="#" class="navigation-link navigation-link-current">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a href="catalog.html" class="navigation-link">Гостиницы</a>
@@ -122,14 +119,14 @@
               <option value="popular">Сначала популярные</option>
             </select>
             <ul class="display-type-list">
-              <li>
-                <a href="#" class="button-display-type"><span class="visually-hidden">Показать группу карточек.</span></a>
+              <li class="display-type-item">
+              <button class="button-display-type"><span class="visually-hidden">Показать группу карточек.</span></button>
               </li>
-              <li>
-              <a href="#" class="button-display-type"><span class="visually-hidden">Показать карточку.</span></a>
+              <li class="display-type-item">
+              <button href="#" class="button-display-type"><span class="visually-hidden">Показать карточку.</span></button>
               </li>
-              <li>
-              <a href="#" class="button-display-type"><span class="visually-hidden">Показать список.</span></a>
+              <li class="display-type-item">
+              <button href="#" class="button-display-type"><span class="visually-hidden">Показать список.</span></button>
               </li>
             </ul>
           </section>
@@ -247,5 +244,4 @@
       </section>
     </footer>
   </body>
-
 </html>

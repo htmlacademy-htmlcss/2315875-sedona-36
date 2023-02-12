@@ -14,25 +14,22 @@
   font-display: swap;
 }
 
-html{
-  height: 100%;
+html {
+  min-height: 100%;
+  background-color: #F2F2F2;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display:flex;
   flex-direction: column;
   min-height: 100%;
+  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
   color: #000000;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -181,10 +178,6 @@ body {
   display: flex;
 }
 
-.advantages-block-image {
-  order: 1;
-}
-
 .offering-list {
   display: flex;
   justify-content: space-between;
@@ -194,7 +187,7 @@ body {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
 }
 
@@ -296,11 +289,12 @@ body {
 }
 
 .filter-buttons {
-  display: inline;
+  display: flex;
+  flex-direction: column;
   width: 191px;
 }
 
-.catalog-filter-list{
+.catalog-filter-list {
   margin: 0;
   padding: 0;
 }
@@ -326,6 +320,16 @@ body {
   padding: 0;
   margin-left: auto;
   list-style: none;
+  width: 160px;
+  text-align: right;
+}
+
+.display-type-item {
+  display: inline;
+}
+
+.button-display-type {
+  cursor: pointer;
 }
 
 .catalog-filter-result {
@@ -338,7 +342,6 @@ body {
 }
 
 .sorting {
-  width: 292px;
   display: flex;
   width: 522px;
 }
