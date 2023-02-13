@@ -266,10 +266,13 @@ body {
   list-style: none;
 }
 
+.breadcrumbs {
+  display: flex;
+}
+
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
-  display: inline;
 }
 
 .catalog-filter-title {
