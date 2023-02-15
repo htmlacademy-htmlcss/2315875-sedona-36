@@ -51,10 +51,9 @@ body {
   margin: 0 auto;
 }
 
-.page-head-logo {
+.page-header-logo {
   width: 138px;
-  height: auto;
-  vertical-align:bottom;
+  display: block;
 }
 
 .navigation-logo {
@@ -287,14 +286,14 @@ body {
 
 .offering-title {
   width: 230px;
-  margin:0;
+  margin: 0;
   margin-top: 102px;
   margin-bottom: 30px;
 }
 
 .offering-description {
   width: 230px;
-  margin:0;
+  margin: 0;
 }
 
 .offering-item:nth-child(even) {
