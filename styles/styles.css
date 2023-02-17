@@ -54,6 +54,7 @@ body {
 .page-header-logo {
   width: 138px;
   display: block;
+  object-fit: contain;
 }
 
 .navigation-logo {
@@ -248,6 +249,10 @@ body {
   min-height: 384px;
 }
 
+.advantages-block img {
+  object-fit: cover;
+}
+
 .advantages-block-image {
   order: -1;
 }
@@ -404,6 +409,10 @@ body {
 .footer-academy-logo {
   width: 115px;
   margin-left: auto;
+}
+
+.html-logo {
+  object-fit: contain;
 }
 
 .footer-contacts-phone {
@@ -590,6 +599,10 @@ body {
   flex-direction: column;
   border: 1px solid #F2F2F2;
   padding: 20px;
+}
+
+.hotel-card-image {
+  object-fit: contain;
 }
 
 .hotel-description-container {
