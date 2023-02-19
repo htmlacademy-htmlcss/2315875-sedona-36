@@ -54,6 +54,7 @@ body {
 .page-header-logo {
   width: 138px;
   display: block;
+  object-fit: contain;
 }
 
 .navigation-logo {
@@ -248,6 +249,10 @@ body {
   min-height: 384px;
 }
 
+.advantages-block img {
+  object-fit: cover;
+}
+
 .advantages-block-image {
   order: -1;
 }
@@ -406,6 +411,10 @@ body {
   margin-left: auto;
 }
 
+.html-logo {
+  object-fit: contain;
+}
+
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -416,7 +425,7 @@ body {
 
 .catalog-container {
   width: 1200px;
-  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .main-inner-header {
@@ -525,12 +534,11 @@ body {
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 46px;
 }
 
 .display-type-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -549,7 +557,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  margin:0;
+  margin: 0;
   width: 340px;
   text-transform: uppercase;
 }
@@ -571,9 +579,13 @@ body {
 }
 
 .hotels-list {
-  width: 1060px;
-  padding: 0;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 342px);
+  gap: 18px;
+  width: 1200px;
+  margin: 0;
+  padding: 39px 69px;
+  margin-bottom: 39px;
 }
 
 .pagination {
@@ -582,15 +594,42 @@ body {
   margin: 0 auto;
 }
 
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #F2F2F2;
+  padding: 20px;
+}
+
+.hotel-card-image {
+  object-fit: contain;
+}
+
+.hotel-description-container {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+}
+
 .hotel-card-title {
   font-size: 24px;
-  line-height:28px;
+  line-height: 28px;
   font-weight: 700;
   color: #000000;
+  margin: 16px 0;
 }
 
 .hotel-card-link {
   text-decoration: none;
+}
+
+.hotel-card-price {
+  justify-self: end;
+}
+
+.hotel-card .button {
+  padding: 8px 0;
+  text-align: center;
 }
 
 .hotel-card-rating {
@@ -598,6 +637,13 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+}
+.stars {
+  margin: 0;
+  justify-self: start;
 }
 
 .selected-button {
@@ -606,17 +652,14 @@ body {
 }
 
 .pagination {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  gap: 8px;
   margin: 0;
   margin-left: 70px;
   padding: 0;
   list-style: none;
 }
-
-.pagination-item:not(:last-child) {
-  padding-right: 8px;
-}
-
 
 .pagination-link {
   display: block;
