@@ -30,6 +30,7 @@ body {
   line-height: 21px;
   background-color: #FFFFFF;
   color: #000000;
+  box-shadow: 0 0 20px #b7b7b7;
 }
 
 .visually-hidden {
@@ -106,6 +107,22 @@ body {
   padding: 0;
 }
 
+.navigation-user
+.navigation-item:nth-child(1)
+.navigation-link {
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user
+.navigation-item:nth-child(2)
+.navigation-link {
+  background-image: url("../images/header/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .navigation-list,
 .advantages-list,
 .offering-list {
@@ -130,6 +147,7 @@ body {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .navigation-user-container .button {
@@ -289,6 +307,24 @@ body {
   text-align: center;
 }
 
+.offering-house {
+  background-image: url("../images/housing.svg");
+  background-repeat: no-repeat;
+  background-position: center 81px;
+}
+
+.offering-food {
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+  background-position: center 81px;
+}
+
+.offering-gifts {
+  background-image: url("../images/gift.svg");
+  background-repeat: no-repeat;
+  background-position: center 81px;
+}
+
 .offering-title {
   width: 230px;
   margin: 0;
@@ -369,6 +405,8 @@ body {
   box-sizing: border-box;
   font-size: 20px;
   line-height: 34px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .subscribe-form {
@@ -403,16 +441,25 @@ body {
 
 .footer-social-item {
   width: 48px;
-  min-height: 40px;
+  height: 41px;
+}
+
+.footer-social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-academy-logo {
-  width: 115px;
-  margin-left: auto;
+  width: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .html-logo {
   object-fit: contain;
+  text-align: end;
 }
 
 .footer-contacts-phone {
@@ -420,7 +467,7 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .catalog-container {
@@ -463,6 +510,30 @@ body {
 .breadcrumbs-item {
   font-size: 16px;
   line-height: 21px;
+  margin-right: 10px;
+}
+
+.breadcrumbs-link {
+  display: flex;
+  align-items: center;
+  min-height: 21px;
+}
+
+.breadcrumbs-item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs-item:not(:first-child) {
+  background-image: url("..//images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.breadcrumbs-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 18px;
 }
 
 .catalog-filter-title {
@@ -551,6 +622,31 @@ body {
   cursor: pointer;
   width: 48px;
   height: 48px;
+  background-color: transparent;
+  border: 2px solid #F2F2F2;
+  border-radius: 4px;
+}
+
+.button-display-type-current {
+  border-color: #000000;
+}
+
+.display-type-group {
+  background-image: url("../images/view-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.display-type-card {
+  background-image: url("../images/view-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.display-type-list {
+  background-image: url("../images/view-3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalog-filter-result {
@@ -588,17 +684,12 @@ body {
   margin-bottom: 39px;
 }
 
-.pagination {
-  width: 1060px;
-  padding: 0;
-  margin: 0 auto;
-}
-
 .hotel-card {
   display: flex;
   flex-direction: column;
   border: 1px solid #F2F2F2;
   padding: 20px;
+  border-radius: 4px;
 }
 
 .hotel-card-image {
@@ -640,6 +731,7 @@ body {
   margin: 0;
   padding: 8px 0;
   text-align: center;
+  border-radius: 4px;
 }
 .stars {
   margin: 0;
@@ -674,6 +766,7 @@ body {
   line-height: 36px;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .pagination-link-current {
