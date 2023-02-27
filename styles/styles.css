@@ -215,9 +215,23 @@ body {
   background-image: url(../images/welcome-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 51px;
-  padding-bottom: 82px;
   margin-bottom: 70px;
+}
+
+.hero img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 25px;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  background-image: url("../images/divider.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 57px;
 }
 
 .welcome-text {
