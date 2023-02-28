@@ -486,7 +486,7 @@ body {
   border-bottom-left-radius: 0;
 }
 
-.subscribe-button:hover
+.subscribe-button:hover,
 .subscribe-button:focus {
   background-color: #68A2CA;
 }
