@@ -746,6 +746,61 @@ body {
   line-height: 23px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:focus .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 10px;
+  top: 6px;
+  left: 4px;
+  background-image: url("../images/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
 .range-wrapper-inputs {
   display: flex;
   margin-bottom: 44px;
@@ -973,11 +1028,42 @@ body {
 }
 
 .sorting-select {
+  /* position: relative; */
+  font: inherit;
   font-size: 18px;
   line-height: 24px;
-  font-family: inherit;
   width: 292px;
-  padding: 14px 0 14px 20px;
+  padding: 14px 40px 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.sorting-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.sorting-select::-ms-expand {
+  display: none;
+}
+
+.sorting-select:hover,
+.sorting-select:focus {
+  border-color: #68A2CA;
+}
+
+.sorting-select:active {
+  border-color: #3F5E72;
+}
+
+.sorting-select:disabled {
+  opacity: 0.3;
 }
 
 .hotels-list {
