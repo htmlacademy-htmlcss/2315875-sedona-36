@@ -126,6 +126,31 @@
                   </ul>
                 </fieldset>
               </div>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <input class="range-input range-input-min" type="number" value="0" name="min-price">
+                      <span class="label-min">от</span>
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input range-input-max" type="number" value="9000" name="max-price">
+                      <span class="label-max">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную стоимость.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную стоимость.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
               <div class="filter-buttons">
                 <button class="button show-button" type="submit">Применить</button>
                 <button class="button reset-button" type="reset">Сбросить</button>
