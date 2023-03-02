@@ -42,7 +42,7 @@
         <div class="navigation-user-container">
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a href="modal.html" class="navigation-link navigation-search">
+              <a href="#" class="navigation-link navigation-search">
                 <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
@@ -126,7 +126,7 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="important-text">Заинтересовались?</p>
         <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="modal.html" class="button">Поиск гостиницы в Седоне</a>
+        <a href="catalog.html" class="button">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe-index">
         <h2 class="important-text">Подпишитесь на рассылку</h2>
@@ -177,5 +177,69 @@
         </a>
       </section>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="search-label" for="search-entry-date">Дата Заезда:</label>
+              <input class="search-form-field" type="text" id="search-entry-date" name="search-enty-date" placeholder="Укажите дату" value="27 апреля 2020">
+              <span class="invalid-date-notification">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="field-group">
+              <label class="search-label" for="search-departure-date">Дата Выезда:</label>
+              <input class="search-form-field" type="text" id="search-departure-date" name="search-departure-date" placeholder="Укажите дату" value="1 сентября 2023">
+              <span class="available-date-notification">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="visitors-field-group-container">
+              <p class="visitors-field-group">
+                <label class="search-label" for="adults-amount">Взрослые:</label>
+                <button class="less-button less-adults">
+                  <svg class="amount-svg" width="20" height="20" viewBox="0 0 20 20" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z">
+                  </svg>
+                </button>
+                <input class="search-form-field people-amount" type="number" id="adults-amount" name="adults-amount" placeholder="2" value="2">
+                <button class="more-button more-adults">
+                  <svg class="amount-svg" width="20" height="20" viewBox="0 0 20 20" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z">
+                  </svg>
+                </button>
+              </p>
+              <p class="visitors-field-group">
+                <span class="search-label search-label-icon">
+                <label class="search-label" for="children-amount">Дети:</label>
+                <span class="tooltip">
+                  <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button">
+                    <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                      </svg>
+                  </button>
+                  <span class="tooltip-text" id="tooltip-label-children" role="tooltip">Укажите количество детей,<br>которые будут с вами, возраст которых от 6 до 18 лет. Дети<br>до 6 лет размещаются бесплатно.</span>
+                </span>
+                </span>
+                </span>
+                <button class="less-button less-adults">
+                  <svg class="amount-svg" width="20" height="20" viewBox="0 0 20 20" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z">
+                  </svg>
+                </button>
+                <input class="search-form-field people-amount" type="number" id="children-amount" name="children-amount" placeholder="2">
+                <button class=" more-button more-adults">
+                  <svg class="amount-svg" width="20" height="20" viewBox="0 0 20 20" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z">
+                  </svg>
+                </button>
+              </p>
+            </div>
+            <a href="#" class="search-button button">Найти</a>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
