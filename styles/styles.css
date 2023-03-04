@@ -204,6 +204,7 @@ body {
 .button.disabled {
   background-color: #E5E5E5;
   color: #FFFFFF;
+  cursor: auto;
 }
 
 .navigation-user-container .button {
@@ -495,6 +496,11 @@ body {
   opacity: 0.6;
 }
 
+.subscribe-index .field:disabled,
+.subscribe-catalog .field:disabled {
+  opacity: 0.3;
+}
+
 .subscribe-button {
   width: 232px;
   padding: 8px 0;
@@ -647,7 +653,8 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.modal-close-button:active {
+.modal-close-button:active,
+.modal-close-button:disabled {
   opacity: 0.3;
 }
 
@@ -713,7 +720,7 @@ body {
   border-color: #E6E6E6;
 }
 
-.search-form-field:focus{
+.search-form-field:focus {
   outline: 1px solid #83B3D3;
   border-color: #83B3D3;
 }
@@ -721,6 +728,10 @@ body {
 .search-form-field:focus:not(:placeholder-shown)  {
   border-color: #000000;
   outline: none;
+}
+
+.search-form-field:disabled {
+  opacity: 0.3;
 }
 
 .search-label {
@@ -811,6 +822,12 @@ body {
   fill-opacity: 0.3;
 }
 
+.less-button:disabled .amount-svg,
+.more-button:disabled .amount-svg {
+  fill-opacity: 0.3;
+  opacity: 0.3;
+}
+
 .search-button {
   display: block;
   font-size: 20px;
@@ -820,6 +837,7 @@ body {
   background-color: #83B3D3;
   border-radius: 4px;
   text-align: center;
+  width: 100%;
 }
 
 .search-button:hover,
@@ -878,6 +896,14 @@ body {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+.tooltip-toggle:disabled {
+  opacity: 0.3;
+}
+
+.tooltip-toggle:disabled .tooltip-text {
+  display: none;
 }
 
 .visitors-field-group .search-label {
@@ -1060,7 +1086,8 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.control:active {
+.control:active,
+.control:disabled {
   opacity: 0.3;
 }
 
@@ -1115,6 +1142,10 @@ body {
 .range-input:focus:not(:placeholder-shown) {
   outline: 1px solid #83B3D3;
   border-color: #83B3D3;
+}
+
+.range-input:disabled {
+  opacity: 0.3;
 }
 
 .range-input-min {
@@ -1183,6 +1214,11 @@ body {
   border-color: #83B3D3;
 }
 
+.range-toggle:disabled,
+.range-toggle:disabled .range-bar {
+  opacity: 0.3;;
+}
+
 .reset-button, .show-button {
   min-width: 190px;
   padding: 8px 0;
@@ -1237,6 +1273,7 @@ body {
 .reset-button:disabled {
   opacity: 0.1;
   background-color: transparent;
+  cursor: auto;
 }
 
 .sorting-container {
@@ -1320,7 +1357,6 @@ body {
 }
 
 .sorting-select {
-  /* position: relative; */
   font: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1413,9 +1449,15 @@ body {
   text-align: center;
   border-radius: 4px;
 }
+
 .stars {
   margin: 0;
   justify-self: start;
+  align-self: center;
+}
+
+.star {
+  margin-right: 6px;
 }
 
 .select-button:hover,
