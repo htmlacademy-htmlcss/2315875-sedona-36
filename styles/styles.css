@@ -867,20 +867,20 @@ body {
 
 .less-button:hover .amount-svg,
 .more-button:hover .amount-svg {
-  fill:#000000;
+  fill: #000000;
   fill-opacity: 1;
 }
 
 .less-button:focus .amount-svg,
 .more-button:focus .amount-svg {
-  fill:#000000;
+  fill: #000000;
   fill-opacity: 1;
   border-color: #83b3d3;
 }
 
 .less-button:active .amount-svg,
 .more-button:active .amount-svg {
-  fill:#756157;
+  fill: #756157;
   fill-opacity: 0.3;
 }
 
