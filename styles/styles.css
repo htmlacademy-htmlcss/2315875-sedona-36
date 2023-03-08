@@ -92,7 +92,7 @@ body {
 }
 
 .navigation-link:active {
-  color:#756157;
+  color: #756157;
 }
 
 .navigation-link-current:hover,
@@ -283,6 +283,7 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 0 auto;
+  color: #333333;
 }
 
 .advantages-text + .advantages-text {
@@ -331,6 +332,7 @@ body {
 .advantages-description {
   margin: 0;
   width: 230px;
+  color: #333333;
 }
 
 .advantages-description + .advantages-description {
@@ -406,14 +408,13 @@ body {
   justify-content: flex-start;
   align-items: center;
   color: #000000;
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   padding: 183px 0 20px 0;
   min-height: 182px;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center 81px;
-
 }
 
 .offering-house {
@@ -438,10 +439,11 @@ body {
   width: 230px;
   margin: 0;
   margin-bottom: 10px;
+  color: #333333;
 }
 
 .offering-item:nth-child(even) {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #ffffff;
 }
 
 .hotel-search {
@@ -722,6 +724,9 @@ body {
   text-transform: uppercase;
 }
 
+.modal-close {
+  display: none;
+}
 
 .field-group {
   display: flex;
@@ -758,6 +763,10 @@ body {
 
 .invalid-date-notification {
   color: #ff5757;
+}
+
+.available-date-notification {
+  color: #333333;
 }
 
 .search-form-field {
@@ -1517,6 +1526,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
+  color: #333333;
 }
 
 .hotel-card-title {
@@ -1602,7 +1612,8 @@ body {
   list-style: none;
 }
 
-.pagination-link {
+.pagination-link,
+.pagination-divider {
   display: block;
   box-sizing: border-box;
   width: 60px;
@@ -1613,9 +1624,12 @@ body {
   color: #ffffff;
   font-size: 20px;
   line-height: 36px;
-  text-decoration: none;
-  text-transform: uppercase;
   border-radius: 4px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .pagination-link-current {
@@ -1636,20 +1650,8 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-divider:hover,
-.pagination-divider:focus {
-  background-color: #f2f2f2;
-}
-
 .pagination-divider:active {
   background-color: #e5e5e5;
-  color: #000000;
-}
-
-.pagination-link-current:hover,
-.pagination-link-current:focus,
-.pagination-link-current:active {
-  background-color: #f2f2f2;
   color: #000000;
 }
 
