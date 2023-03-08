@@ -1655,6 +1655,13 @@ body {
   color: #000000;
 }
 
+.pagination-link-current:hover,
+.pagination-link-current:focus,
+.pagination-link-current:active {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
 .pagination-divider {
   color: #000000;
   background-color: #ffffff;
