@@ -630,6 +630,10 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
+.footer-academy-logo {
+  align-self: flex-end;
+}
+
 .html-logo:hover,
 .html-logo:focus {
   fill: #756157;
@@ -986,7 +990,7 @@ body {
 
 .catalog-container {
   width: 1200px;
-  margin-bottom: 62px;
+  margin-bottom: 63px;
 }
 
 .main-inner-header {
@@ -1380,7 +1384,7 @@ body {
   width: 1060px;
   margin: 0 auto;
   align-items: center;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .display-type-list {
@@ -1551,12 +1555,19 @@ body {
 
 .stars {
   margin: 0;
+  width: 100%;
   justify-self: start;
   align-self: center;
 }
 
 .star {
-  margin-right: 6px;
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  margin-right: 1px;
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .select-button:hover,
