@@ -277,8 +277,7 @@ body {
 
 .advantages-text,
 .offering-text,
-.search-text,
-.subscribe-description {
+.search-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -333,6 +332,10 @@ body {
   margin: 0;
   width: 230px;
   color: #333333;
+}
+
+.advantages-block-container .advantages-description {
+  color: #ffffff;
 }
 
 .advantages-description + .advantages-description {
@@ -904,6 +907,7 @@ body {
 
 .search-button {
   display: block;
+  font-family: inherit;
   font-size: 20px;
   line-height: 24px;
   padding-top: 18px;
@@ -1675,6 +1679,10 @@ body {
 .subscribe-catalog {
   text-align: center;
   padding: 94px 70px 104px 70px;
+}
+
+.subscribe-catalog .subscribe-description {
+  color: #333333;
 }
 
 .subscribe-catalog .important-text {
